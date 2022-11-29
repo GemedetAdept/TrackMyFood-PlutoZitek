@@ -2,7 +2,7 @@
 
 ## Extra Credit Project Requirements
 
-[ ] Create a program that a user can 
+Create a program that a user can:
 
 [ ] Enter the name of the food.
 
