@@ -17,7 +17,7 @@ namespace filesaver {
 
 		public static void SaveData(string outputFile, FoodItem item) {
 
-			File.AppendAllText(outputFile, $"{item.timestamp},,{item.foodName},{item.foodCalories}" + Environment.NewLine);
+			File.AppendAllText(outputFile, $"{item.timestamp},{item.mealTime},{item.foodName},{item.foodCalories}" + Environment.NewLine);
 
 		}
 	}
