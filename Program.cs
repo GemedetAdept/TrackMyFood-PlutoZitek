@@ -14,3 +14,9 @@
 
 FoodItem one = new FoodItem("apple", 3000);
 Console.WriteLine(one.foodName + "\n" + one.foodCalories + "\n" + one.timestamp);
+
+bool menuLoop = true;
+while (menuLoop) {
+
+	
+}
