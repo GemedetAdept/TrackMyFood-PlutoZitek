@@ -1,0 +1,15 @@
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.csproj.AssemblyReference.cache
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.AssemblyInfoInputs.cache
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.AssemblyInfo.cs
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.csproj.CoreCompileInputs.cache
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\bin\Debug\net6.0\TrackMyFood-PlutoZitek.exe
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\bin\Debug\net6.0\TrackMyFood-PlutoZitek.deps.json
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\bin\Debug\net6.0\TrackMyFood-PlutoZitek.runtimeconfig.json
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\bin\Debug\net6.0\TrackMyFood-PlutoZitek.dll
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\bin\Debug\net6.0\ref\TrackMyFood-PlutoZitek.dll
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\bin\Debug\net6.0\TrackMyFood-PlutoZitek.pdb
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.dll
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\ref\TrackMyFood-PlutoZitek.dll
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.pdb
+C:\Users\vivian.zitek\Programming\cSharp\TrackMyFood-PlutoZitek\obj\Debug\net6.0\TrackMyFood-PlutoZitek.genruntimeconfig.cache

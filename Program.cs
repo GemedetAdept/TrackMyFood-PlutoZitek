@@ -11,3 +11,6 @@
 // Displays the requested data by day.
 
 // Save all of this info and load the info to a file.
+
+FoodItem one = new FoodItem("apple", 3000);
+Console.WriteLine(one.foodName + "\n" + one.foodCalories + "\n" + one.timestamp);
