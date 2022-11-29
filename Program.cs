@@ -7,7 +7,8 @@ using Microsoft.VisualBasic.FileIO;
 
 // Save all of this info and load the info to a file.
 
-string outputFile = FileSaver.InitalizeFile("\\saved", "savedFoodItems.csv", "Date,Time,Name,Calories");
+string fieldTypes = "Date,Time,Name,Calories";
+string outputFile = FileSaver.InitalizeFile("\\saved", "savedFoodItems.csv", fieldTypes);
 
 MenuDriver selectionMenu = new MenuDriver();
 string[] options = new string[] {
@@ -44,6 +45,9 @@ mainMenu();
 
 void displayItems() {
 
+	string[] fieldLabels = fieldTypes.Split(",");
+	Console.WriteLine("tEst");
+
 	using (TextFieldParser parseCSV = new TextFieldParser(outputFile)) {
 
 		parseCSV.SetDelimiters(",");
@@ -51,9 +55,15 @@ void displayItems() {
 		while(parseCSV.EndOfData != true) {
 
 			string[] parsedFields = parseCSV.ReadFields();
-			foreach (string field in parsedFields) {
+			for (int i = 0; i < parsedFields.Length-1; i++) {
 
-				Console.WriteLine(field);
+				if (i+1 % 1 == 0) Console.WriteLine($"{fieldLabels[0]}: {parsedFields[i]}");
+				else if (i % 2 == 0) Console.WriteLine($"{fieldLabels[1]}: {parsedFields[i]}");
+				else if (i % 3 == 0) Console.WriteLine($"{fieldLabels[2]}: {parsedFields[i]}");
+				else if (i % 4 == 0) {
+					Console.WriteLine($"{fieldLabels[0]}: {parsedFields[i]}");
+					Snippet.LineBreak();
+				}
 			}
 		}
 	}
