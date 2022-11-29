@@ -1,5 +1,6 @@
 ﻿using menudriver;
 using filesaver;
+using Microsoft.VisualBasic.FileIO;
 // Saves the time the food was entered and determines if it is most likely breakfast, lunch, or dinner. 
 
 // Displays the requested data by day.
@@ -7,7 +8,6 @@ using filesaver;
 // Save all of this info and load the info to a file.
 
 string outputFile = FileSaver.InitalizeFile("\\saved", "savedFoodItems.csv", "Date,Time,Name,Calories");
-List<FoodItem> savedFoodItems = new List<FoodItem>();
 
 MenuDriver selectionMenu = new MenuDriver();
 string[] options = new string[] {
@@ -29,11 +29,10 @@ void mainMenu() {
 			case 0:
 				FoodItem newItem = new FoodItem();
 				FoodItem.CreateItem(newItem);
-				savedFoodItems.Add(newItem);
 				FileSaver.SaveData(outputFile, newItem);
 				continue;
 			case 1: 
-				displayItems(savedFoodItems);
+				displayItems();
 				break;
 			default:
 				break;
@@ -43,13 +42,20 @@ void mainMenu() {
 
 mainMenu();
 
-void displayItems(List<FoodItem> saved) {
+void displayItems() {
 
-	for (int i = 0; i < saved.Count; i++) {
+	using (TextFieldParser parseCSV = new TextFieldParser(outputFile)) {
 
-		Console.WriteLine($"[{i+1}] - {saved[i].foodName}");
-		Console.WriteLine($"\tCalories: {saved[i].foodCalories}");
-		Snippet.LineBreak();
+		parseCSV.SetDelimiters(",");
+
+		while(parseCSV.EndOfData != true) {
+
+			string[] parsedFields = parseCSV.ReadFields();
+			foreach (string field in parsedFields) {
+
+				Console.WriteLine(field);
+			}
+		}
 	}
 
 	Console.ReadKey();
