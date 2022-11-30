@@ -46,7 +46,6 @@ mainMenu();
 void displayItems() {
 
 	string[] fieldLabels = fieldTypes.Split(",");
-	Console.WriteLine("tEst");
 
 	using (TextFieldParser parseCSV = new TextFieldParser(outputFile)) {
 
@@ -55,15 +54,9 @@ void displayItems() {
 		while(parseCSV.EndOfData != true) {
 
 			string[] parsedFields = parseCSV.ReadFields();
-			for (int i = 0; i < parsedFields.Length-1; i++) {
+			foreach (string field in parsedFields) {
 
-				if (i+1 % 1 == 0) Console.WriteLine($"{fieldLabels[0]}: {parsedFields[i]}");
-				else if (i % 2 == 0) Console.WriteLine($"{fieldLabels[1]}: {parsedFields[i]}");
-				else if (i % 3 == 0) Console.WriteLine($"{fieldLabels[2]}: {parsedFields[i]}");
-				else if (i % 4 == 0) {
-					Console.WriteLine($"{fieldLabels[0]}: {parsedFields[i]}");
-					Snippet.LineBreak();
-				}
+				Console.WriteLine(field);
 			}
 		}
 	}
